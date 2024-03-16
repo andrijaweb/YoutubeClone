@@ -26,9 +26,9 @@ function VideoCard({ video }) {
   }
 
   return (
-    <div className="md:max-w-xs sm:max-w-full">
+    <div className="md:max-w-60 sm:max-w-full">
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <div className="max-w-56 sm:max-w-xs h-44 overflow-hidden">
+        <div className="overflow-hidden">
           <img
             className="bg-cover bg-center"
             src={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
@@ -38,7 +38,7 @@ function VideoCard({ video }) {
 
         <div className="h-28 bg-stone-800 p-4">
           <div onClick={handleNavigateVideo}>
-            <h3 className="text-stone-100 font-medium">
+            <h3 className="text-stone-100 font-medium text-sm">
               {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
             </h3>
           </div>
