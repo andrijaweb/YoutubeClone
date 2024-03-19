@@ -10,6 +10,7 @@ const options = {
   headers: {
     "X-RapidAPI-Key": "afe5535d8amsh3d67cfc5228c3cep161f41jsne602e6091ca5",
     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+    "Access-Control-Allow-Origin": "*",
   },
 };
 

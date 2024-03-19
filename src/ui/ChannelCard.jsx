@@ -27,9 +27,9 @@ function ChannelCard({ channel }) {
 
         <div className="text-center text-stone-100">
           <h3 className="font-medium text-lg">
-            {snippet?.title || demoChannelTitle}
+            {snippet.title || demoChannelTitle}
           </h3>
-          {channel?.statistics && <ChannelCardAbout channel={channel} />}
+          {channel.statistics && <ChannelCardAbout channel={channel} />}
         </div>
       </Link>
     </div>
